@@ -1,0 +1,16 @@
+[package]
+name = "ckb-rpc"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ckb-jsonrpc-types = "0.101"
+ckb-types = "0.101"
+jsonrpc-core = "18"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["preserve_order"] }
+failure = "0.1.5"
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+chrono = "0.4"
